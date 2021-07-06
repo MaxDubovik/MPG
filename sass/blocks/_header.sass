@@ -1,0 +1,92 @@
+.header
+    min-height: 1000px
+    background: linear-gradient(360deg, #000000 4.66%, rgba(0, 0, 0, 0) 76.78%), url('../img/header-background.png') center (center/cover) no-repeat
+    padding: 40px 0px 55px 0px
+    &__title
+        margin: 0
+        text-align: center
+        margin-top: 320px
+        font-family: $title_font
+        font-size: 115px
+        font-weight: 400
+        color: #fff
+    &__subtitle 
+        margin-top: 41px
+        text-align: center
+        font-size: 25px
+        font-weight: 300
+        color: #fff
+        line-height: 35px
+    &__btn
+        display: block
+        margin: 0 auto
+        margin-top: 79px
+        width: 196px
+        height: 48px
+        font-size: 14px
+        font-weight: 600
+        text-transform: uppercase
+        border: none
+        background-color: $main-color
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            transform: scale(1.1)
+    &__footer
+        margin-top: 236px
+        text-align: center
+        font-size: 14px
+        font-weight: 300
+        color: rgba(255, 255, 255, 0.7)
+.nav
+    &__header
+        display: none
+        background-color: #000
+        &__wrapper
+            padding: 20px 15px 20px 15px
+            display: flex
+            justify-content: space-between
+        &__logo
+            width: 100px
+            height: 38px
+            img
+                width: 100px
+                height: 38px 
+        &__btn
+            border: none
+            background-color: #000
+            
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__menu
+        display: flex
+        list-style-type: none
+    &__item
+        margin-right: 66px
+        &:last-child
+            margin-right: 0px
+    &__link
+        position: relative
+        color: #000
+        font-size: 18px
+        font-weight: 400
+        text-decoration: none
+        transition: 0.5s all
+        outline: none
+        &::after
+            display: block
+            position: absolute
+            top: 30px
+            left: 0
+            width: 0
+            height: 2px
+            background-color: $main-color
+            content: ""
+            transition: width 0.3s ease-out
+        &:hover::after, a:focus:after
+            width: 100%
+    &__btn
+        display: none
+.hamburger
+    display: none
