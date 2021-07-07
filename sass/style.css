@@ -610,6 +610,7 @@
   .header {
     padding: 20px 0px 70px 0px;
     min-height: 520px;
+    background-attachment: scroll;
   }
   .header__title {
     margin-top: 65px;
