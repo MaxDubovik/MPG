@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.nav__menu');
     menuItem = document.querySelectorAll('.nav__item');
+    menuLink = document.querySelectorAll('.nav__link');
     hamburger = document.querySelector('.hamburger');
 
     hamburger.addEventListener('click', () => {
@@ -24,8 +25,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger_active');
-            menu.classList.toggle('nav__menu_active');
+            menu.classList.remove('nav__menu_active');
+        })
+    }) 
+
+    menuLink.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('nav__menu_active');
         })
     }) 
 
@@ -67,11 +73,11 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-// $(document).ready(function(){
+$(document).ready(function(){
 
-//     $("a[href^='#']").click(function(){
-//         const _href = $(this).attr("href");
-//         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-//         return false;
-//     });
-// });
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+});

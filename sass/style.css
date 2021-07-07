@@ -12,6 +12,7 @@
   min-height: 1000px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(4.66%, #000000), color-stop(76.78%, rgba(0, 0, 0, 0))), url("../img/header-background.png") center center/cover no-repeat;
   background: linear-gradient(360deg, #000000 4.66%, rgba(0, 0, 0, 0) 76.78%), url("../img/header-background.png") center center/cover no-repeat;
+  background-attachment: fixed;
   padding: 40px 0px 55px 0px;
 }
 
@@ -242,6 +243,13 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 26px;
+}
+
+.about__text {
+  overflow: hidden;
+}
+
+._anim-show {
   -webkit-transform: translate(0px, 120%);
           transform: translate(0px, 120%);
   opacity: 0;
@@ -249,12 +257,10 @@
   transition: all 0.8s ease 0s;
 }
 
-.about__info._active {
+._anim-show._active, ._active ._anim-show {
+  opacity: 1;
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
-  opacity: 1;
-  -webkit-transition: all 0.8s ease 0.2s;
-  transition: all 0.8s ease 0.2s;
 }
 
 .services {
@@ -636,6 +642,21 @@
   }
   .nav__link {
     font-size: 40px;
+  }
+  .nav__link::after {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #F9D023;
+    content: "";
+    -webkit-transition: width 0.3s ease-out;
+    transition: width 0.3s ease-out;
+  }
+  .nav__link::after:hover::after, .nav__link::after a:focus:after {
+    width: 100%;
   }
   .nav__menu {
     margin: 0;
