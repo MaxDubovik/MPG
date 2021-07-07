@@ -23,6 +23,17 @@
   font-size: 115px;
   font-weight: 400;
   color: #fff;
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.header__title._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .header__subtitle {
@@ -32,6 +43,19 @@
   font-weight: 300;
   color: #fff;
   line-height: 35px;
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.header__subtitle._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+  -webkit-transition: all 0.8s ease 0.4s;
+  transition: all 0.8s ease 0.4s;
 }
 
 .header__btn {
@@ -162,6 +186,17 @@
   font-family: "Alata", sans-serif;
   font-size: 90px;
   font-weight: 400;
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.about__title._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .about__line {
@@ -185,6 +220,19 @@
 .about__img {
   width: 486px;
   height: 315px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.about__img._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .about__info {
@@ -194,6 +242,19 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 26px;
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.about__info._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+  -webkit-transition: all 0.8s ease 0.2s;
+  transition: all 0.8s ease 0.2s;
 }
 
 .services {
@@ -206,6 +267,17 @@
   font-family: "Alata", sans-serif;
   font-size: 90px;
   font-weight: 400;
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.services__title._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .services__line {
@@ -222,6 +294,19 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 26px;
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.services__subtitle._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+  -webkit-transition: all 0.8s ease 0.2s;
+  transition: all 0.8s ease 0.2s;
 }
 
 .services__wrapper {
@@ -236,6 +321,19 @@
 
 .services__block {
   padding: 0 20px 0 0;
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.services__block._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+  -webkit-transition: all 0.8s ease 0;
+  transition: all 0.8s ease 0;
 }
 
 .services__block-title {
@@ -267,6 +365,19 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 26px;
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.services__descr._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+  -webkit-transition: all 0.8s ease 0.2s;
+  transition: all 0.8s ease 0.2s;
 }
 
 .footer {
@@ -675,7 +786,7 @@
   .footer__feedback input {
     width: 92%;
   }
-  .footer__feedback .button {
+  .footer__feedback__button {
     right: 0;
     width: 196px;
   }
