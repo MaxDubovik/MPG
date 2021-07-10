@@ -75,14 +75,16 @@
         width: 422px
         height: 14px
         padding: 18px 0 16px 20px
-        border: 1px solid #000
+        border: none
         outline: none
         text-transform: uppercase
         font-size: 14px
         font-weight: 600
         transition: 0.3s all
         &:focus
-            border: 1px solid $main-color
+            box-shadow: 0 0 15px $main-color
+        &._error
+            box-shadow: 0 0 15px red
         &::-webkit-input-placeholder
             color: #000
         &::-moz-placeholder 
